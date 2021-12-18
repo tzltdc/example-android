@@ -35,15 +35,11 @@ allprojects {
   project.version = '0.1.0'
 }
 
-
 rootCoverage {
   buildVariant "freeDebug"
-  excludes = ["**/AutoOneOf_*.**/**",
-              "**/Auto_*.**/**",
-              "**/Auto_*.**/**",
-              "**/DataBinding*.**/**",
-              "**/DataBinder*.**/**",
-  ]
+  excludes = ["**/AutoOneOf_*.*",
+              "**/DataBinding*.*",
+              "**/DataBinder*.*",]
   executeTests true
   executeAndroidTests true
   executeUnitTests true
@@ -51,5 +47,4 @@ rootCoverage {
   includeAndroidTestResults true
   includeUnitTestResults true
   includeNoLocationClasses true
-
 }
