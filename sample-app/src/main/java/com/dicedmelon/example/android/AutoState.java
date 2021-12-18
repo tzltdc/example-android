@@ -15,4 +15,8 @@ import com.google.auto.value.AutoOneOf;
   public static AutoState ofError() {
     return AutoOneOf_AutoState.error();
   }
+
+  public static AutoState ignored() {
+    return AutoOneOf_AutoState.idle();
+  }
 }
