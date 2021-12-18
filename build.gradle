@@ -38,7 +38,12 @@ allprojects {
 
 rootCoverage {
   buildVariant "freeDebug"
-  excludes = ["**/ignored/**"]
+  excludes = ["**/AutoOneOf_*.**/**",
+              "**/Auto_*.**/**",
+              "**/Auto_*.**/**",
+              "**/DataBinding*.**/**",
+              "**/DataBinder*.**/**",
+  ]
   executeTests true
   executeAndroidTests true
   executeUnitTests true
