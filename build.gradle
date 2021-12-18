@@ -11,17 +11,8 @@ buildscript {
 apply plugin: 'nl.neotech.plugin.rootcoverage'
 
 ext {
-  configCompileSdkVersion = 30
-  configTargetSdkVersion = 30
-  configBuildToolsVersion = '30.0.2'
-
-  support = [appCompat: 'androidx.appcompat:appcompat:1.0.0']
-
-  assertJCore = 'org.assertj:assertj-core:1.7.1'
-  junit = 'junit:junit:4.12'
-
-  supportTest = [espressoCore: 'androidx.test.espresso:espresso-core:3.1.0',
-                 rules       : 'androidx.test:rules:1.1.1']
+  configCompileSdkVersion = 31
+  configTargetSdkVersion = 31
 }
 
 allprojects {

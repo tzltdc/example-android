@@ -3,7 +3,6 @@ apply plugin: 'jacoco'
 
 android {
   compileSdkVersion configCompileSdkVersion
-  buildToolsVersion configBuildToolsVersion
 
   defaultConfig {
     minSdkVersion 15
@@ -42,14 +41,14 @@ dependencies {
 
   implementation "com.google.auto.value:auto-value-annotations:1.8.2"
   annotationProcessor "com.google.auto.value:auto-value:1.8.2"
+
+  implementation  'androidx.appcompat:appcompat:1.4.0'
+
+  testImplementation 'org.assertj:assertj-core:3.21.0'
+  testImplementation  'junit:junit:4.13.2'
   testImplementation "com.google.truth:truth:1.1.3"
+
   androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-
-  implementation support.appCompat
-
-  testImplementation assertJCore
-  testImplementation junit
-
-  androidTestImplementation supportTest.espressoCore
-  androidTestImplementation supportTest.rules
+  androidTestImplementation  'androidx.test.espresso:espresso-core:3.4.0'
+  androidTestImplementation 'androidx.test:rules:1.4.0'
 }
