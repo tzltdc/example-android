@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/codecov/example-android.svg?branch=master)](https://travis-ci.org/codecov/example-android)
-[![codecov.io](https://codecov.io/github/tzltdc/example-android/branch/master/graph/badge.svg)](https://codecov.io/github/codecov/example-android)
+[![codecov.io](https://codecov.io/github/tzltdc/example-android/branch/master/graph/badge.svg)](https://codecov.io/github/tzltdc/example-android)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-android.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-android?ref=badge_shield)
 # [Codecov](https://codecov.io) Android Example
 ## Guide
