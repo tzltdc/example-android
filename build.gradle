@@ -5,9 +5,10 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:4.2.2'
-    classpath 'com.dicedmelon.gradle:jacoco-android:0.1.5'
+    classpath 'nl.neotech.plugin:android-root-coverage-plugin:1.4.0'
   }
 }
+apply plugin: 'nl.neotech.plugin.rootcoverage'
 
 ext {
   configCompileSdkVersion = 30
@@ -32,4 +33,18 @@ allprojects {
   }
 
   project.version = '0.1.0'
+}
+
+
+rootCoverage {
+  buildVariant "freeDebug"
+  excludes = ["**/ignored/**"]
+  executeTests true
+  executeAndroidTests true
+  executeUnitTests true
+  generateXml true
+  includeAndroidTestResults true
+  includeUnitTestResults true
+  includeNoLocationClasses true
+
 }
